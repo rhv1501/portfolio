@@ -38,7 +38,6 @@ export function Frameworks() {
     "framermotion",
     "fedora",
     "rabbitmq",
-    "microservice"
   ];
   return (
     <div className="relative flex h-[15rem] w-full flex-col items-center justify-center">
