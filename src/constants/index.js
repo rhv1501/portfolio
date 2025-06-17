@@ -13,9 +13,7 @@ export const myProjects = [
     href: "https://github.com/rhv1501/coding_ai-agent.git",
     logo: "",
     image: "/assets/projects/ai-agent-banner.png", // Replace with your actual asset path
-    tags: [
-      { id: 1, name: "Node.js", path: "/assets/logos/nodejs.svg" },
-    ],
+    tags: [{ id: 1, name: "Node.js", path: "/assets/logos/nodejs.svg" }],
   },
   {
     id: 7,
@@ -113,7 +111,7 @@ export const myProjects = [
       "Responsive React frontend for seamless user experience.",
       "Supports group and private chats, message history, and notifications.",
     ],
-    href: "https://bit.ly/Chatify_app",
+    href: "https://www.chatify.rudsoft.tech",
     logo: "",
     image: "/assets/projects/chatify.png",
     tags: [
@@ -133,7 +131,7 @@ export const myProjects = [
       "Implements JWT-based authentication for secure access.",
       "All notes are encrypted for privacy and security.",
     ],
-    href: "https://bit.ly/i-notebook",
+    href: "https://inotebook.rudsoft.tech",
     logo: "",
     image: "/assets/projects/i-notebook.png",
     tags: [
@@ -153,7 +151,7 @@ export const myProjects = [
       "Tracks click analytics and provides a dashboard for users.",
       "Modern UI with Tailwind CSS and secure backend APIs.",
     ],
-    href: "https://cyber-links.vercel.app/",
+    href: "https://cyberlinks.rudsoft.tech",
     logo: "",
     image: "/assets/projects/cyberlinks.png",
     tags: [
