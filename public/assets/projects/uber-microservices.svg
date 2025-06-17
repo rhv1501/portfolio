@@ -1,0 +1,88 @@
+<svg width="1280" height="720" viewBox="0 0 1280 720" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="720" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#22263A"/>
+      <stop offset="1" stop-color="#161926"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="50%" r="80%" fx="50%" fy="50%">
+      <stop offset="0%" stop-color="#00e4d0" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#161926" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="1280" height="720" fill="url(#bg)"/>
+  <ellipse cx="640" cy="360" rx="550" ry="250" fill="url(#glow)" />
+
+  <!-- API Gateway -->
+  <rect x="585" y="320" width="110" height="70" rx="16" fill="#30344e" stroke="#0fffc1" stroke-width="3"/>
+  <text x="640" y="355" font-size="22" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#0fffc1" font-weight="bold">API Gateway</text>
+  
+  <!-- Services -->
+  <!-- User Service -->
+  <rect x="320" y="160" width="110" height="70" rx="16" fill="#30344e" stroke="#8aff80" stroke-width="2.5"/>
+  <text x="375" y="195" font-size="18" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#8aff80">User</text>
+  <text x="375" y="215" font-size="12" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#8aff80">Service</text>
+  
+  <!-- Captain Service -->
+  <rect x="850" y="160" width="110" height="70" rx="16" fill="#30344e" stroke="#ffd36b" stroke-width="2.5"/>
+  <text x="905" y="195" font-size="18" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#ffd36b">Captain</text>
+  <text x="905" y="215" font-size="12" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#ffd36b">Service</text>
+  
+  <!-- Ride Service -->
+  <rect x="585" y="80" width="110" height="70" rx="16" fill="#30344e" stroke="#47b6ff" stroke-width="2.5"/>
+  <text x="640" y="115" font-size="18" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#47b6ff">Ride</text>
+  <text x="640" y="135" font-size="12" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#47b6ff">Service</text>
+  
+  <!-- Arrows (API Gateway Connections) -->
+  <line x1="640" y1="320" x2="640" y2="150" stroke="#0fffc1" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="640" y1="390" x2="375" y2="230" stroke="#0fffc1" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="640" y1="390" x2="905" y2="230" stroke="#0fffc1" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Microservices Dots -->
+  <circle cx="375" cy="250" r="7" fill="#8aff80"/>
+  <circle cx="905" cy="250" r="7" fill="#ffd36b"/>
+  <circle cx="640" cy="150" r="7" fill="#47b6ff"/>
+
+  <!-- RabbitMQ -->
+  <rect x="1050" y="540" width="100" height="60" rx="14" fill="#332d19" stroke="#ff9248" stroke-width="2.5"/>
+  <text x="1100" y="570" font-size="17" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#ff9248">RabbitMQ</text>
+  <!-- Wavy line to API Gateway -->
+  <path d="M 640 390 Q 700 510 1100 570" stroke="#ff9248" stroke-width="2.5" fill="none" />
+  <!-- RabbitMQ queue dots -->
+  <circle cx="1080" cy="550" r="4" fill="#ff9248"/>
+  <circle cx="1110" cy="560" r="4" fill="#ff9248"/>
+  <circle cx="1140" cy="570" r="4" fill="#ff9248"/>
+  
+  <!-- MongoDB -->
+  <rect x="110" y="540" width="100" height="60" rx="14" fill="#1e322d" stroke="#22ff79" stroke-width="2.5"/>
+  <text x="160" y="570" font-size="17" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#22ff79">MongoDB</text>
+  <!-- Line from User Service to Mongo -->
+  <line x1="375" y1="230" x2="160" y2="540" stroke="#22ff79" stroke-width="2" marker-end="url(#arrow)"/>
+  <!-- Mongo leaf icon -->
+  <ellipse cx="160" cy="555" rx="9" ry="17" fill="#22ff79" opacity="0.6"/>
+  
+  <!-- Docker -->
+  <rect x="585" y="630" width="110" height="55" rx="12" fill="#183d4d" stroke="#47b6ff" stroke-width="2.5"/>
+  <text x="640" y="665" font-size="17" font-family="Montserrat, Arial, sans-serif" text-anchor="middle" fill="#47b6ff">Docker</text>
+  <!-- Docker whale base -->
+  <ellipse cx="640" cy="650" rx="25" ry="7" fill="#47b6ff" opacity="0.5"/>
+  <rect x="625" y="640" width="30" height="10" rx="3" fill="#47b6ff" opacity="0.7"/>
+  <rect x="633" y="634" width="6" height="6" fill="#47b6ff" opacity="0.9"/>
+  <rect x="641" y="634" width="6" height="6" fill="#47b6ff" opacity="0.9"/>
+  <rect x="649" y="634" width="6" height="6" fill="#47b6ff" opacity="0.9"/>
+  
+  <!-- Legend Dots -->
+  <circle cx="70" cy="700" r="8" fill="#8aff80"/><text x="85" y="705" font-size="15" fill="#8aff80">User</text>
+  <circle cx="150" cy="700" r="8" fill="#ffd36b"/><text x="165" y="705" font-size="15" fill="#ffd36b">Captain</text>
+  <circle cx="240" cy="700" r="8" fill="#47b6ff"/><text x="255" y="705" font-size="15" fill="#47b6ff">Ride</text>
+  <circle cx="320" cy="700" r="8" fill="#0fffc1"/><text x="335" y="705" font-size="15" fill="#0fffc1">API Gateway</text>
+  <circle cx="410" cy="700" r="8" fill="#ff9248"/><text x="425" y="705" font-size="15" fill="#ff9248">RabbitMQ</text>
+  <circle cx="500" cy="700" r="8" fill="#22ff79"/><text x="515" y="705" font-size="15" fill="#22ff79">MongoDB</text>
+  <circle cx="590" cy="700" r="8" fill="#47b6ff"/><text x="605" y="705" font-size="15" fill="#47b6ff">Docker</text>
+
+  <!-- Arrowhead Definition -->
+  <defs>
+    <marker id="arrow" markerWidth="13" markerHeight="13" refX="7" refY="6" orient="auto" markerUnits="strokeWidth">
+      <path d="M2,2 L2,11 L10,6 L2,2" fill="#0fffc1"/>
+    </marker>
+  </defs>
+</svg>
