@@ -1,11 +1,13 @@
 import { useRef } from "react";
-import Card from "../components/Card";
-import { Globe } from "../components/globe";
 import CopyEmailButton from "../components/CopyEmailButton";
-import { Frameworks } from "../components/Frameworks";
+
+import {Globe} from "../components/globe";
+import {Frameworks} from "../components/Frameworks";
+import Card from "../components/Card";
 
 const About = () => {
   const grid2Container = useRef();
+
   return (
     <section className="c-space section-spacing" id="about">
       <h2 className="text-heading">About Me</h2>
@@ -14,6 +16,7 @@ const About = () => {
         <div className="flex flex-col md:flex-row items-start md:items-end grid-default-color grid-1 relative min-h-[40rem] md:min-h-0">
           <img
             src="assets/coding-pov.png"
+            alt="Coding workspace"
             className="absolute scale-110 right-2 top-2 md:scale-[3] md:left-50 md:inset-y-10 lg:scale-[2.5] md:relative"
             style={{ maxWidth: "100px", width: "30vw", minWidth: "60px" }}
           />
@@ -67,6 +70,7 @@ const About = () => {
           </div>
           <div className="absolute inset-x-0 pointer-events-none -bottom-4 h-1/2 sm:h-1/3 bg-gradient-to-t from-indigo" />
         </div>
+
         {/* Grid 2 */}
         <div className="grid-default-color grid-2">
           <div
@@ -132,7 +136,6 @@ const About = () => {
                 image="assets/logos/java.svg"
                 containerRef={grid2Container}
               />
-              <div className="basis-full h-0" />
               <Card
                 style={{ rotate: "25deg", top: "60%", left: "60%" }}
                 image="assets/logos/tailwindcss.svg"
@@ -141,6 +144,7 @@ const About = () => {
             </div>
           </div>
         </div>
+
         {/* Grid 3 */}
         <div className="grid-black-color grid-3">
           <div className="z-10 w-[50%]">
@@ -154,6 +158,7 @@ const About = () => {
             <Globe />
           </figure>
         </div>
+
         {/* Grid 4 */}
         <div className="grid-special-color grid-4">
           <div className="flex flex-col items-center justify-center gap-4 size-full">
@@ -163,13 +168,14 @@ const About = () => {
             <CopyEmailButton />
           </div>
         </div>
+
         {/* Grid 5 */}
         <div className="grid-default-color grid-5">
           <div className="z-10 w-[50%]">
-            <p className="headText">Teck Stack</p>
+            <p className="headtext">Tech Stack</p>
             <p className="subtext">
-              I specialize in a variety of languages, frameworks, and tools
-              thatt allow me to build robust and scalable applications
+              I specialize in a variety of languages, frameworks, and tools that
+              allow me to build robust and scalable applications
             </p>
           </div>
           <div className="absolute inset-y-0 md:inset-y-9 w-full h-full start-[50%] md:scale-125">
