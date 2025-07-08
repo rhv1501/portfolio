@@ -37,6 +37,15 @@ function Navigation({ onNavClick }) {
           Contact
         </button>
       </li>
+      <li className="nav-li">
+        <a
+          className="nav-link hover:animate-bounce"
+          href="https://www.blog.rhv1501.me"
+          target="_blank"
+        >
+          Blog
+        </a>
+      </li>
     </ul>
   );
 }
