@@ -90,7 +90,7 @@ export const myProjects = [
       "Admin panel for inventory, orders, and analytics.",
       "JWT authentication, secure REST APIs, and responsive UI with Tailwind CSS.",
     ],
-    href: "https://github.com/rhv1501/E-commerce.git",
+    href: "https://e-commerce-wabm.onrender.com",
     logo: "",
     image: "/assets/projects/pkgit.png",
     tags: [
